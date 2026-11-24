@@ -1,0 +1,45 @@
+name: 问题反馈 (Bug Report)
+description: 遇到闪退、页面异常、教务/校园卡/电费抓取失败等问题时使用
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **隐私提醒：提交前请务必删除学号、密码、Cookie、姓名等个人敏感信息。**
+  - type: input
+    id: version
+    attributes:
+      label: App 版本
+      description: 可在 App「我的 -> 关于」中查看
+      placeholder: 例如 v0.13.2
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: 手机型号与系统版本
+      placeholder: 例如 小米 14 / Android 15 (HyperOS 2)
+    validations:
+      required: true
+  - type: dropdown
+    id: campus
+    attributes:
+      label: 所在校区
+      options:
+        - 梁林校区
+        - 平湖校区
+        - 校外 / WebVPN
+        - 不确定 / 与校区无关
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述与复现步骤
+      description: 请尽量说明触发路径、预期行为与实际表现，如有报错文本可脱敏后贴出
+      placeholder: |
+        1. 打开首页 / 点击……
+        2. 出现……
+    validations:
+      required: true
