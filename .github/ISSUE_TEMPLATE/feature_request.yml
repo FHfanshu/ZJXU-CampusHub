@@ -1,0 +1,17 @@
+name: 功能建议 (Feature Request)
+description: 想要新功能、界面改进或新的校园服务适配
+title: "[建议] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 你希望增加或改进什么？
+      description: 简述使用场景和期望效果
+    validations:
+      required: true
+  - type: input
+    id: campus
+    attributes:
+      label: 适用校区（可选）
+      placeholder: 例如 梁林 / 平湖 / 通用
